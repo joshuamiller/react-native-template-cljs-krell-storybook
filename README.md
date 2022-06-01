@@ -14,6 +14,23 @@ yarn cljs:build
 yarn run ios # or android
 ```
 
+## Workflow
+
+JavaScript components and Storybook tests are in `js/`, named `Component.js` and
+`Component.stories.js` respectively. Run `yarn storybook` for an interactive
+environment showing the look and feel of your components; they will live-reload
+when edited.
+
+You can require your JS components in your ClojureScript views with
+```clojure
+(def component-name
+  (r/adapt-react-class
+    (.-default (js/require "../js/ComponentName.js"))))
+```
+
+Note the path is just `../`, regardless of where in your ClojureScript directory
+hierarchy you are working from.
+
 ## Rationale
 
 Clojure, with its functional core and immutable data structures, is ideally
