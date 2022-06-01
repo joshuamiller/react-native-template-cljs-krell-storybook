@@ -11,7 +11,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "cljs:build": "clj -M -m krell.main -co build.edn -c",
-    "cljs:repl": "clj -M -m krell.main -co build.edn -c -r"
+    "cljs:repl": "clj -M -m krell.main -co build.edn -c -r",
+    "postinstall": "nbb post_install.cljs"
   },
   "dependencies": {
     "@cljs-oss/module-deps": "^1.1.1",
@@ -33,9 +34,11 @@
     "@storybook/testing-library": "^0.0.11",
     "babel-jest": "^26.6.3",
     "babel-plugin-react-native-web": "^0.17.7",
+    "dashify": "^2.0.0",
     "eslint": "^7.32.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.67.0",
+    "nbb": "0.5.103",
     "react-dom": "^18.1.0",
     "react-native-web": "^0.17.7",
     "react-test-renderer": "17.0.2"
