@@ -3,7 +3,7 @@
 ## Getting Started
 
 ```bash
-npx react-native init YourProjectName --template https://github.com/joshuamiller/react-native-template-cljs-krell-storybook
+npx react-native init YourProjectName --template react-native-template-cljs-krell-storybook
 ```
 
 ## Usage
