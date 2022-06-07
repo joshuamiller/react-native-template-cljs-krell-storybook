@@ -37,3 +37,13 @@
  core-cljs)
 
 (rmSync "src/project_name" #js {:recursive true})
+
+(def package-json
+  (-> (readFileSync "package.json")
+      str
+      js/JSON.parse
+      (js->clj :keywordize-keys true)
+      (update :scripts dissoc :postinstall)
+      clj->js))
+
+(writeFileSync "package.json" (js/JSON.stringify package-json nil 2))
