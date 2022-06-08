@@ -46,6 +46,14 @@ JavaScript, functioning essentially as markup, with tools like Storybook
 providing quick feedback on layout. This template provides the dependencies
 and plumbing to connect these three main tools.
 
+## Contributing
+
+Bug reports, pull requests, and additions to [the wiki](https://github.com/joshuamiller/react-native-template-cljs-krell-storybook/wiki)
+are all extremely welcome. The biggest hurdle to getting started with
+ClojureScript on React Native is "it works on my machine." Eliminating these
+issues and documenting the solutions will help everyone get on with
+writing useful code.
+
 ## References
 
 * [ClojureScript in the Age of Typescript -- David Nolen](https://www.youtube.com/watch?v=3HxVMGaiZbc&t=5s)
