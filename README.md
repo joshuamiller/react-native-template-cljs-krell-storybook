@@ -13,7 +13,10 @@ yarn cljs:build
 
 yarn run ios # or android
 ```
-- on Apple M1 dependencies can be installed by running `arch -x86_64 pod install` inside `/ios` folder.
+
+### Apple Silicon Note
+
+If you run into compatibility trouble on Apple Silicon, dependencies can be installed by running `arch -x86_64 pod install` inside `/ios` folder.
 
 ## Workflow
 
