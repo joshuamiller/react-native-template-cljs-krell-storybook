@@ -17,7 +17,7 @@
   "dependencies": {
     "@cljs-oss/module-deps": "^1.1.1",
     "react": "18.1.0",
-    "react-native": "0.70.5",
+    "react-native": "0.70.13",
     "react-native-device-info": "8.1.2",
     "react-native-tcp-socket": "5.2.0"
   },
