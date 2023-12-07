@@ -11,7 +11,25 @@ npx react-native init YourProjectName --template react-native-template-cljs-krel
 ```bash
 yarn cljs:build
 
-yarn run ios # or android
+yarn start
+```
+
+### Cocoapods Issues
+
+Occasionally the Cocoapods installation (a Ruby-based system for providing
+native dependencies on iOS) fails, with an error like:
+
+```
+error Error: Failed to install CocoaPods dependencies for iOS project, which is required by this template.
+Please try again manually: "cd ./Sportscaster/ios && pod install".
+```
+
+This can be fixed by manually running
+
+```bash
+bundle
+
+npx pod-install
 ```
 
 ### Apple Silicon Note
