@@ -4,6 +4,8 @@
 
 ```bash
 npx react-native init YourProjectName --template react-native-template-cljs-krell-storybook
+
+bundle && npx pod-install # For iOS
 ```
 
 ## Usage
@@ -14,24 +16,6 @@ yarn cljs:build
 yarn start
 ```
 
-### Cocoapods Issues
-
-Occasionally the Cocoapods installation (a Ruby-based system for providing
-native dependencies on iOS) fails, with an error like:
-
-```
-error Error: Failed to install CocoaPods dependencies for iOS project, which is required by this template.
-Please try again manually: "cd ./ProjectName/ios && pod install".
-```
-
-This can be fixed by manually running
-
-```bash
-bundle
-
-npx pod-install
-```
-
 ### Apple Silicon Note
 
 If you run into compatibility trouble on Apple Silicon, dependencies can be installed by running `arch -x86_64 pod install` inside `/ios` folder.
@@ -39,9 +23,11 @@ If you run into compatibility trouble on Apple Silicon, dependencies can be inst
 ## Workflow
 
 JavaScript components and Storybook tests are in `js/`, named `Component.js` and
-`Component.stories.js` respectively. Run `yarn storybook` for an interactive
+`Component.stories.js` respectively. Run `yarn storybook:run` for an interactive
 environment showing the look and feel of your components; they will live-reload
-when edited.
+when edited. (Note that `yarn storybook:run` will overwrite the Krell-generated
+`index.js`, you will need to run `yarn cljs:build` or `yarn cljs:repl` before
+running `yarn start` again to get back to your app).
 
 You can require your JS components in your ClojureScript views with
 ```clojure

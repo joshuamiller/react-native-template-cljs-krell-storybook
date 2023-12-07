@@ -8,4 +8,8 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
  */
 const config = {};
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+const defaultConfig = getDefaultConfig(__dirname);
+
+defaultConfig.resolver.resolverMainFields.unshift('sbmodern');
+
+module.exports = mergeConfig(defaultConfig, config);
