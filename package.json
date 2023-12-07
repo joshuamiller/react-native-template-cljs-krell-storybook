@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-cljs-krell-storybook",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Template providing a working React Native setup for ClojureScript with Krell and Storybook",
   "scripts": {
     "test": "exit 0"
