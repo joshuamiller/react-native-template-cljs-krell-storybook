@@ -21,7 +21,7 @@ native dependencies on iOS) fails, with an error like:
 
 ```
 error Error: Failed to install CocoaPods dependencies for iOS project, which is required by this template.
-Please try again manually: "cd ./Sportscaster/ios && pod install".
+Please try again manually: "cd ./ProjectName/ios && pod install".
 ```
 
 This can be fixed by manually running
