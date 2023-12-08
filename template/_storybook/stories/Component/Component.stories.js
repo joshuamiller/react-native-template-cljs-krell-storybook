@@ -1,5 +1,5 @@
 import React from "react";
-import Component from "./Component";
+import Component from "../../../js/Component";
 
 export default {
   title: "Component/Default",
