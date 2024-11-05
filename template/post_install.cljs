@@ -4,6 +4,8 @@
             [cljs.pprint :refer [pprint]]
             [clojure.string :as str]))
 
+(println "Running post_install.cljs")
+
 (defn file->str
   [filename]
   (str (readFileSync filename)))

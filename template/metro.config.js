@@ -1,15 +1,12 @@
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+const withStorybook = require('@storybook/react-native/metro/withStorybook');
 
 /**
  * Metro configuration
- * https://facebook.github.io/metro/docs/configuration
+ * https://reactnative.dev/docs/metro
  *
  * @type {import('metro-config').MetroConfig}
  */
 const config = {};
 
-const defaultConfig = getDefaultConfig(__dirname);
-
-defaultConfig.resolver.resolverMainFields.unshift('sbmodern');
-
-module.exports = mergeConfig(defaultConfig, config);
+module.exports = withStorybook(mergeConfig(getDefaultConfig(__dirname), config));
