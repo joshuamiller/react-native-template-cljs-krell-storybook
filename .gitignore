@@ -1,3 +1,5 @@
 .log
 .clj-kondo
 .lsp
+template/node_modules
+template/package-lock.json
